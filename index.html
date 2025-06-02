@@ -1,0 +1,68 @@
+<head>
+    <style>
+        .gallery{
+            display: grid;
+            background-color: blueviolet;
+            grid-template-areas: 
+            "header header header"
+            "item item item"
+            "item item item";
+            grid-template-columns: repeat(3);
+            grid-template-rows: 1fr 2fr 2fr;
+            gap: 40px;
+            padding: 20px;
+        }
+        .header{
+            background-color: blue;
+            text-align: center;
+            padding: 5px;
+        }
+        .item{
+            text-align: center;
+        }
+        .item img{
+            width: 250px;
+            height: 200px;
+            margin-top: 10px;
+            transition: transform 0.3s;
+        }
+        .item img:hover{
+            transform: scale(1,1)
+        }
+        .cap{
+            color: aliceblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cars</h1>
+    </div>
+    <div class="gallery">
+        <div class="item">
+            <img src="Maruti Suzuki.webp">
+            <p class="cap">Maruti Suzhi</p>
+        </div>
+        <div class="item">
+            <img src="BMW.jpg">
+            <p class="cap">BMW</p>
+        </div>
+        <div class="item">
+            <img src="Farrari.png">
+            <p class="cap">Farrari</p>
+        </div>
+        <div class="item">
+            <img src="Lamborghini.jpg">
+            <p class="cap">Lamborghini</p>
+        </div>
+        <div class="item">
+            <img src="Testla.jpeg">
+            <p class="cap">Testla</p>
+        </div>
+         <div class="item">
+            <img src="super car.jpg">
+            <p class="cap">Super Car</p>
+        </div>
+    </div>
+</body>
