@@ -21,13 +21,13 @@
         .item{
             text-align: center;
         }
-        .gallery img{
+        .item img{
             width: 250px;
             height: 200px;
             margin-top: 10px;
             transition: transform 0.3s;
         }
-        .gallery img:hover{
+        .item img:hover{
             transform: scale(1,1)
         }
         .cap{
@@ -35,12 +35,12 @@
             font-size: 20px;
         }
         @media (max-width: 768px){
-            .gallery{
+            .item{
                 grid-template-columns: respect(2, 1fr);
             }
         }
         @media (max-width: 480px){
-            .gallery{
+            .item{
                 grid-template-columns: 1fr;
             }
         }
