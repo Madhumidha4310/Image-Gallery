@@ -13,15 +13,15 @@
             gap: 40px;
             padding: 20px;
         }
-        .header{
+        .h1{
             background-color: blue;
             text-align: center;
             padding: 5px;
         }
-        .item{
+        .gallery{
             text-align: center;
         }
-        .item img{
+        .gallery img{
             width: 250px;
             height: 200px;
             margin-top: 10px;
@@ -35,21 +35,19 @@
             font-size: 20px;
         }
         @media (max-width: 768px){
-            .item{
+            .gallery{
                 grid-template-columns: respect(2, 1fr);
             }
         }
         @media (max-width: 480px){
-            .item{
+            .gallery{
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="header">
         <h1>Cars</h1>
-    </div>
     <div class="gallery">
         <div class="item">
             <img src="Maruti Suzuki.webp">
